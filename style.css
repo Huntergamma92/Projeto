@@ -86,11 +86,11 @@ body * {
 }
 
 .light #switch button {
- animation: slide-in 0.4s forwards;
+  animation: slide-in 0.4s forwards;
 }
- #switch button:hover {
- outline: 8px solid var(--highlight-color);
- }
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
 
 /*links*/
 ul {
@@ -166,13 +166,20 @@ footer {
   }
 }
 
-  @keyframes slide-back {
-    from {
-      left: 50%;
-    }
-    to {
-      left: 0;
-    }
+@keyframes slide-back {
+  from {
+    left: 50%;
   }
-    
-  
+  to {
+    left: 0;
+  }
+}
+/*Media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-mobile.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+  }
+}
